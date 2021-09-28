@@ -6,10 +6,28 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-
-  constructor() { }
+  recargar: boolean
+  constructor() {
+    this.recargar = false;
+  }
 
   ngOnInit(): void {
+  }
+
+  getListRegistro(data: any) {
+    console.log(data);
+
+  }
+  getList(data: any) {
+
+    console.log(data);
+    this.recargar = true;
+   setTimeout(() => {
+     this.recargar = false;
+
+   }, 200);
+
+
   }
 
 }

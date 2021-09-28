@@ -1,9 +1,24 @@
-<mat-form-field appearance="fill">
-    <mat-label>Name</mat-label>
-    <input matInput placeholder="Ingrese el nombre" [(ngModel)]="name">
-</mat-form-field>
-<mat-form-field appearance="fill">
-    <mat-label>Rut</mat-label>
-    <input matInput placeholder="Ingrese el Rut" [(ngModel)]="rut">
-</mat-form-field>
-<button mat-raised-button color="primary" (click)="addClient()">Primary</button>
+<div class="container">
+  <div class="row">
+    <div class="col-5">
+      <label> <strong> Ingrese Categoria</strong> </label>
+      <mat-form-field appearance="fill">
+        <mat-label>Categoria</mat-label>
+        <input matInput placeholder="Ingrese el Categoria" [(ngModel)]="name" />
+      </mat-form-field>
+    </div>
+    <div class="col-5">
+      <label> <strong> Ingrese precio</strong> </label>
+
+      <mat-form-field appearance="fill">
+        <mat-label>Precio</mat-label>
+        <input matInput placeholder="Ingrese el precio" type="number" [(ngModel)]="precio" />
+      </mat-form-field>
+    </div>
+    <div class="col-10 button p-3">
+      <button mat-raised-button color="primary" (click)="addClient()">
+        Crear
+      </button>
+    </div>
+  </div>
+</div>

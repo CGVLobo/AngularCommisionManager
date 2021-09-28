@@ -1,3 +1,3 @@
 <app-header></app-header>
-<app-add-client></app-add-client>
-<app-client-list></app-client-list>
+<app-add-client (valueResponse)="getList($event)" ></app-add-client>
+<app-client-list  [setValue]="recargar" ></app-client-list>
